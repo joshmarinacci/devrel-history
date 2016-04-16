@@ -19,6 +19,9 @@
       .last {
         text-align: right;
       }
+      .last h1 {
+        font-size: 150%;
+      }
       .slide h1 {
         font-size: 200%;
         line-height: 120%;
@@ -54,13 +57,58 @@
         flex-direction: row;
       }
       .hslide {
-        border: 1px solid red;
+        border: 1px solid transparent;
         display: flex;
         display: -webkit-flex;
         flex-direction: column;
         -webkit-flex-direction: column;
+        align-items: center;
+        max-height: 700px;
+      }
+      .fill {
+        background-color: white;
+        border-radius: 21px;
+        border: 1px solid #aaa;
+      }
+      .hslide img.hfit {
+        width: 100%;
+      }
+      .hslide img.vfit {
 
       }
+      .hslide h3 {
+        font-size: 100%;
+      }
+      .hslide h2 {
+        font-size: 120%;
+      }
+      .hslide h4 {
+        font-size: 80%;
+        margin: 1em;
+      }
+
+      .single {
+        border: 1px solid transparent;
+        height: 700px;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        align-items: center;
+      }
+      .single img {
+          width: 100%;
+      }
+      .single img.vfit {
+          width: auto;
+          max-height: 100%;
+          height: 100%;
+      }
+
+      .hslide.left {
+          align-items:flex-start;
+      }
+
 
     </style>
 </head>
@@ -74,63 +122,63 @@
 
 
 
-    <div class="step slide" data-x="0" data-y="0">
-      <h1>History of Developer Evangelism</h1>
+    <div class="step hslide fill left" data-x="0" data-y="0">
+      <h2>History of Developer Evangelism</h2>
       <h1>&nbsp;</h1>
       <h3>Josh Marinacci</h3>
       <h3>@joshmarinacci</h3>
       <h3>Head of Dev Rel @ PubNub</h3>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="0">
+    <div class="step hslide fill" data-x="1000" data-y="0">
       <img class="hfit" src="images/oldman.jpg"/>
     </div>
-    <div class="step slide" data-x="2000" data-y="0">
+    <div class="step hslide fill" data-x="2000" data-y="0">
       <h3>What is developer evangelism?</h3>
       <img src="images/tool.jpg"/>
     </div>
-    <div class="step slide" data-x="3000" data-y="0">
-      <h3>Who invented it?</h3>
+    <div class="step hslide fill" data-x="3000" data-y="0">
       <img class='hfit' src="images/invention.jpg"/>
     </div>
-    <div class="step slide" data-x="4500" data-y="0">
+    <div class="step hslide fill" data-x="4500" data-y="0">
       <h3>Go Back. Go Back in Ti-ee-ime!</h3>
       <img class="hfit" src="images/stargate-portal.jpg"/>
     </div>
 
 
-    <div class="step" data-x="-10000" data-y="0">
+    <div class="step hslide" data-x="-10000" data-y="0">
       <h3>Dawn of history - 1700s</h3>
       <img src="images/screw.png"/>
     </div>
 
-    <div class="step slide" data-x="-10000" data-y="1000">
+    <div class="step hslide fill" data-x="-10000" data-y="1000">
       <h3>1790s: Screw Lathe</h3>
-      <img class="vfit" src="images/screw-lathe.png"/>
+      <img class="vfit" src="images/screw-lathe.png" height='500px'/>
     </div>
 
-    <div class="step slide" data-x="-10000" data-y="2000">
+    <div class="step hslide fill" data-x="-10000" data-y="2000">
       <h3>Obligatory XKCD Slide</h3>
       <img class="hfit" src="images/xkdc.png"/>
     </div>
 
-    <div class="step slide" data-x="-10000" data-y="3000">
+    <div class="step hslide fill" data-x="-10000" data-y="3000">
       <h3>William Sellers</h3>
       <h2>April 21st 1864 On A Uniform System of Screw Threads</h2>
-      <img src="images/william-sellers.png"/>
+      <img src="images/william-sellers.png" width="300px"/>
     </div>
 
-    <div class="step" data-x="-10000" data-y="4000">
-      <img class="vfit" src="images/luddite.jpg"/>
-    </div>
-    <div class="step hslide" data-x="-10000" data-y="5000">
-        <img src="images/train.jpg" height="30%"/>
-        <img src="images/ship.gif" height="30%"/>
-        <h1>Big Profit</h1>
-        <img src="images/gnomes.png" height="30%"/>
+    <div class="step hslide" data-x="-10000" data-y="4000">
+      <img src="images/luddite.jpg"/>
     </div>
 
-    <div class="step transparent" data-x="-11000" data-y="5500">
+    <div class="step hslide fill" data-x="-10000" data-y="5000">
+        <img src="images/train.jpg" height="200px"/>
+        <img src="images/ship.gif" height="200px"/>
+        <h1>Big Profit for All</h1>
+        <img src="images/gnomes.png" height="100px"/>
+    </div>
+
+    <div class="step hslide fill" data-x="-10000" data-y="6000">
       <img  class='hfit' src="images/sae-metric.jpg"/>
     </div>
 
@@ -140,73 +188,90 @@
     </div>
 
 
-    <div class="step" data-x="-8000" data-y="0" data-rotate="0">
+
+
+    <div class="step hslide" data-x="-8000" data-y="0" data-rotate="0">
       <h1>1900</h1>
     </div>
-    <div class="step slide" data-x="-7000" data-y="0" data-scale="1">
+    <div class="step hslide fill" data-x="-7000" data-y="0" data-scale="1">
       <h1>1908</h1>
-      <img class="hfit" src="images/gas-lamps.jpg"/>
+      <img src="images/gas-lamps.jpg" width='700px'/>
     </div>
 
-    <div class="step slide" data-x="-7000" data-y="1000">
-      <q>Corning : Low Thermal Expansion Glass</q>
+    <div class="step hslide fill" data-x="-7000" data-y="1000">
+      <h3>Corning</h3>
+      <h3>Low Thermal Expansion Glass</h3>
+      <h2>Borosilicate</h3>
     </div>
 
     <div class="step" data-x="-7000" data-y="2000" data-rotate="180">
       <img src="images/pyrex-name.jpg"/>
     </div>
-    <div class="step" data-x="-7000" data-y="3000">
+    <div class="step single" data-x="-7000" data-y="3000">
       <img src="images/pyrex.jpg"/>
     </div>
 
 
-    <div class="step" data-x="-7000" data-y="4000">
-      <img src="images/hale-telescope.jpg"/>
+    <div class="step hslide fill" data-x="-7000" data-y="4000">
+      <h3>Hale Telescope</h3>
+      <img class='vfit' src="images/hale-telescope.jpg" height="500px"/>
     </div>
-    <div class="step" data-x="-7000" data-y="5000" data-scale="1">
+    <div class="step hslide fill" data-x="-7000" data-y="5000">
+      <h3>Still Used Today!</h3>
       <img src="images/telescope-train.jpg"/>
     </div>
 
 
-    <div class="step slide" data-x="-6000" data-y="0">
+
+
+
+
+
+    <div class="step hslide fill" data-x="-6000" data-y="0">
       <h3>1940s</h3>
-      <img class='hfit' src="images/ww2.jpg"/>
+      <img src="images/ww2.jpg" height="550px"/>
     </div>
-    <div class="step slide" data-x="-6000" data-y="1000">
+    <div class="step single fill" data-x="-6000" data-y="1000">
       <img class='hfit'  src="images/freeze-dry.jpg"/>
     </div>
-    <div class="step slide" data-x="-6000" data-y="2000" data-scale='1'>
-      <img class='hfit'  src="images/spam.png"/>
+    <div class="step single fill" data-x="-6000" data-y="2000">
+      <img class='vfit' src="images/spam.png"/>
     </div>
 
-<!--
-    <div class="step slide" data-x="-6000" data-y="4000">
-      <q>james beard [image of james beard] <img src="images/beard.jpg"/></q>
+    <div class="step hslide fill"       data-x="-6000" data-y="3000">
+      <h3>Laura Shapiro</h3>
+      <img src="images/cooking-lady.jpg" height='500px'/>
     </div>
 
-    <div class="step slide" data-x="-6000" data-y="5000">
-      <q>Laura Shapiro, image of casserole <img src="images/cooking-lady.jpg"/></q>
+    <div class="step hslide fill"       data-x="-5000" data-y="3000">
+      <h3>Jello + Shrimp = Crazy Delicous?</h3>
+      <img src="images/jello.jpg" height='500px'/>
     </div>
-    --->
 
-    <div class="step slide" data-x="-6000" data-y="3000">
+    <div class="step single fill" data-x="-6000" data-y="4000">
       <img src="images/pyrex-dish.jpg"/>
     </div>
 
-    <div class="step slide" data-x="-6000" data-y="4000">
-      <h3>Lucy Maltby: First Developer Advocate</h3>
-      <img src="images/pyrex2.jpg"/>
+    <div class="step hslide fill" data-x="-6000" data-y="5000">
+      <h4>Lucy Maltby: First Developer Advocate</h4>
+      <img class='vfit' src="images/pyrex2.jpg" height="400px"/>
     </div>
 
-    <div class="step slide" data-x="-6000" data-y="5000">
+    <div class="step hslide fill" data-x="-5000" data-y="5000">
       <h3>James Beard: First Webinar</h3>
       <img src="images/beard.jpg"/>
     </div>
 
-    <div class="step slide" data-x="-6000" data-y="6000">
+    <div class="step hslide fill" data-x="-4000" data-y="5000">
       <h3>First Hackathon</h3>
-      <img class='vfit' src="images/pillsbury.jpg"/>
+      <img src="images/pillsbury.jpg" height="500px"/>
     </div>
+
+
+
+
+
+
 
     <div class="step" data-x="-4000" data-y="0">
       <h1>1950s</h1>
@@ -214,86 +279,89 @@
     </div>
 
 
-    <div class="step slide" data-x="-4000" data-y="-1000">
+    <div class="step hslide fill" data-x="-4000" data-y="-1000">
       <h3>1951: Grace Hopper</h3>
       <img src="images/grace-hopper.jpg"/>
+      <h4>First Compiler</h4>
     </div>
-    <div class="step slide" data-x="-4000" data-y="-2000">
+    <div class="step hslide fill" data-x="-4000" data-y="-2000">
       <h3>1953: A2/UNIVAC</h3>
-      <img src="images/univac.jpg"/>
-    </div>
-    <div class="step slide" data-x="-4000" data-y="-3000">
-      <q>In those days you had to write your own software</q>
+      <img src="images/univac.jpg" height="500px"/>
+      <h4>First Collaborative Development</h4>
     </div>
 
-    <div class="step slide" data-x="-4000" data-y="-4000">
-      <q>They encouraged sharing, first collaborative development</q>
-    </div>
-
-    <div class="step slide" data-x="-4000" data-y="-5000">
+    <div class="step hslide fill" data-x="-4000" data-y="-3000">
       <h3>1955: IBM 701</h3>
-      <img src='images/701.jpg'/>
+      <img src='images/701.jpg' height='500px'/>
     </div>
-    <div class="step slide" data-x="-4000" data-y="-6000">
+    <div class="step hslide fill" data-x="-4000" data-y="-4000">
       <h3>First open source OS</h3>
       <img src="images/share.jpg"/>
     </div>
-    <div class="step slide" data-x="-4000" data-y="-7000">
-      <img src="images/share-meeting.jpg"/>
+    <div class="step hslide fill" data-x="-4000" data-y="-5000">
+      <img src="images/share-meeting.jpg" width="700px"/>
+      <h3>20,000 members today!</h3>
     </div>
 
 
-    <div class="step" data-x="-2000" data-y="-7000" data-scale='5'>
+
+
+
+    <div class="step hslide" data-x="-2000" data-y="-7000" data-scale='5'>
       <h1>1980s</h1>
     </div>
 
-    <div class="step" data-x="-2000" data-y="-6000" data-scale='1'>
+    <div class="step hslide" data-x="-2000" data-y="-6000" data-scale='1'>
       <h3>Apple</h3>
-      <img src="images/apple-team.jpg"/>
+      <img src="images/apple-team.jpg" height='500px'/>
     </div>
 
-    <div class="step" data-x="-2000" data-y="-5000" data-scale='1'>
-      <h3>Mike Boich: Mark Barton</h3>
+    <div class="step hslide" data-x="-2000" data-y="-5000" data-scale='1'>
+      <h3>Mike Boich &amp; Mark Barton</h3>
       <img src="images/sam-ad.jpg"/>
     </div>
 
-    <div class="step slide" data-x="-2000" data-y="-4000" data-scale='1'>
-      <img src="images/mac.jpg"/>
+    <div class="step hslide fill" data-x="-2000" data-y="-4000" data-scale='1'>
+      <img src="images/mac.jpg" height="500px"/>
     </div>
 
-    <div class="step slide" data-x="-2000" data-y="-3000">
-      <img src="images/guykawasaki.jpg"/>
+    <div class="step hslide fill" data-x="-2000" data-y="-3000">
+      <img src="images/guykawasaki.jpg" height='500px'/>
     </div>
 
-    <div class="step slide" data-x="-2000" data-y="-2000">
+    <div class="step hslide fill" data-x="-2000" data-y="-2000">
       <h3>guykawasaki.com</h3>
-      <img src="images/guy-book.jpg"/>
+      <img src="images/guy-book.jpg" height='500px'/>
     </div>
 
 
 
 
-    <div class="step slide" data-x="-1000" data-y="-2000">
+    <div class="step hslide fill" data-x="-1000" data-y="-2000">
       <h3>Kathy Sierra</h3>
-      <img src="images/head-first.jpg"/>
+      <img src="images/head-first.jpg" height='500px'/>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-2000">
+    <div class="step single fill" data-x="0" data-y="-2000">
       <img src="images/kickass.jpg"/>
     </div>
 
 
-    <div class="step" data-x="1000" data-y="-2000" data-scale="1">
+    <div class="step hslide fill" data-x="2000" data-y="-2000" data-scale="1">
       <h3>To make a long story short</h3>
       <img src="images/book.gif"/>
     </div>
 
-    <div class="step last" data-x="0" data-y="2000" data-scale="20">
-      <h3>you are joining a field with an illustrious tradition</h3>
+    <div class="step last" data-x="2000" data-y="2000" data-scale="20">
+      <h3>you are joining a field with a long<br/> and illustrious tradition</h3>
     </div>
 
-    <div class="step last" data-x="0" data-y="4000" data-scale="5">
-      <h3>Thank You!</h3>
+    <div class="step last" data-x="18000" data-y="2000" data-scale="20">
+      <h1>Go help people kick ass!</h1>
+    </div>
+
+    <div class="step last" data-x="18000" data-y="4000" data-scale="5">
+      <h1>Thank You!</h1>
       <h3>@joshmarinacci</h3>
       <h3>Go PubNub</h3>
     </div>
