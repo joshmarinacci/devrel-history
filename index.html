@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="impress-demo.css" rel="stylesheet" />
+
+    <style type="text/css">
+      .slide img, .step img {
+      }
+      .last {
+        text-align: right;
+      }
+      .slide h1 {
+        font-size: 200%;
+        line-height: 120%;
+      }
+      .slide h2 {
+        font-size: 150%;
+        line-height: 120%;
+      }
+
+      .slide img.vfit {
+        max-height: 100%;
+        min-height: 100%;
+        text-align: center;
+      }
+
+      .slide img.hfit {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 1em;
+      }
+      .transparent {
+        padding:0;
+      }
+      .transparent img {
+        width: 100%;
+      }
+
+
+      .vslide {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: row;
+      }
+      .hslide {
+        border: 1px solid red;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+
+      }
+
+    </style>
+</head>
+<body class="impress-not-supported">
+
+  <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+      <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+  <div id="impress">
+
+
+
+    <div class="step slide" data-x="0" data-y="0">
+      <h1>History of Developer Evangelism</h1>
+      <h1>&nbsp;</h1>
+      <h3>Josh Marinacci</h3>
+      <h3>@joshmarinacci</h3>
+      <h3>Head of Dev Rel @ PubNub</h3>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="0">
+      <img class="hfit" src="images/oldman.jpg"/>
+    </div>
+    <div class="step slide" data-x="2000" data-y="0">
+      <h3>What is developer evangelism?</h3>
+      <img src="images/tool.jpg"/>
+    </div>
+    <div class="step slide" data-x="3000" data-y="0">
+      <h3>Who invented it?</h3>
+      <img class='hfit' src="images/invention.jpg"/>
+    </div>
+    <div class="step slide" data-x="4500" data-y="0">
+      <h3>Go Back. Go Back in Ti-ee-ime!</h3>
+      <img class="hfit" src="images/stargate-portal.jpg"/>
+    </div>
+
+
+    <div class="step" data-x="-10000" data-y="0">
+      <h3>Dawn of history - 1700s</h3>
+      <img src="images/screw.png"/>
+    </div>
+
+    <div class="step slide" data-x="-10000" data-y="1000">
+      <h3>1790s: Screw Lathe</h3>
+      <img class="vfit" src="images/screw-lathe.png"/>
+    </div>
+
+    <div class="step slide" data-x="-10000" data-y="2000">
+      <h3>Obligatory XKCD Slide</h3>
+      <img class="hfit" src="images/xkdc.png"/>
+    </div>
+
+    <div class="step slide" data-x="-10000" data-y="3000">
+      <h3>William Sellers</h3>
+      <h2>April 21st 1864 On A Uniform System of Screw Threads</h2>
+      <img src="images/william-sellers.png"/>
+    </div>
+
+    <div class="step" data-x="-10000" data-y="4000">
+      <img class="vfit" src="images/luddite.jpg"/>
+    </div>
+    <div class="step hslide" data-x="-10000" data-y="5000">
+        <img src="images/train.jpg" height="30%"/>
+        <img src="images/ship.gif" height="30%"/>
+        <h1>Big Profit</h1>
+        <img src="images/gnomes.png" height="30%"/>
+    </div>
+
+    <div class="step transparent" data-x="-11000" data-y="5500">
+      <img  class='hfit' src="images/sae-metric.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-11000" data-y="9000" data-rotate="270" data-scale="5">
+      <q>The First Developer Evangelist</q>
+      <img class="vfit" src="images/william-sellers.png"/>
+    </div>
+
+
+    <div class="step" data-x="-8000" data-y="0" data-rotate="0">
+      <h1>1900</h1>
+    </div>
+    <div class="step slide" data-x="-7000" data-y="0" data-scale="1">
+      <h1>1908</h1>
+      <img class="hfit" src="images/gas-lamps.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-7000" data-y="1000">
+      <q>Corning : Low Thermal Expansion Glass</q>
+    </div>
+
+    <div class="step" data-x="-7000" data-y="2000" data-rotate="180">
+      <img src="images/pyrex-name.jpg"/>
+    </div>
+    <div class="step" data-x="-7000" data-y="3000">
+      <img src="images/pyrex.jpg"/>
+    </div>
+
+
+    <div class="step" data-x="-7000" data-y="4000">
+      <img src="images/hale-telescope.jpg"/>
+    </div>
+    <div class="step" data-x="-7000" data-y="5000" data-scale="1">
+      <img src="images/telescope-train.jpg"/>
+    </div>
+
+
+    <div class="step slide" data-x="-6000" data-y="0">
+      <h3>1940s</h3>
+      <img class='hfit' src="images/ww2.jpg"/>
+    </div>
+    <div class="step slide" data-x="-6000" data-y="1000">
+      <img class='hfit'  src="images/freeze-dry.jpg"/>
+    </div>
+    <div class="step slide" data-x="-6000" data-y="2000" data-scale='1'>
+      <img class='hfit'  src="images/spam.png"/>
+    </div>
+
+<!--
+    <div class="step slide" data-x="-6000" data-y="4000">
+      <q>james beard [image of james beard] <img src="images/beard.jpg"/></q>
+    </div>
+
+    <div class="step slide" data-x="-6000" data-y="5000">
+      <q>Laura Shapiro, image of casserole <img src="images/cooking-lady.jpg"/></q>
+    </div>
+    --->
+
+    <div class="step slide" data-x="-6000" data-y="3000">
+      <img src="images/pyrex-dish.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-6000" data-y="4000">
+      <h3>Lucy Maltby: First Developer Advocate</h3>
+      <img src="images/pyrex2.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-6000" data-y="5000">
+      <h3>James Beard: First Webinar</h3>
+      <img src="images/beard.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-6000" data-y="6000">
+      <h3>First Hackathon</h3>
+      <img class='vfit' src="images/pillsbury.jpg"/>
+    </div>
+
+    <div class="step" data-x="-4000" data-y="0">
+      <h1>1950s</h1>
+      <h2>Computation!</h2>
+    </div>
+
+
+    <div class="step slide" data-x="-4000" data-y="-1000">
+      <h3>1951: Grace Hopper</h3>
+      <img src="images/grace-hopper.jpg"/>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-2000">
+      <h3>1953: A2/UNIVAC</h3>
+      <img src="images/univac.jpg"/>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-3000">
+      <q>In those days you had to write your own software</q>
+    </div>
+
+    <div class="step slide" data-x="-4000" data-y="-4000">
+      <q>They encouraged sharing, first collaborative development</q>
+    </div>
+
+    <div class="step slide" data-x="-4000" data-y="-5000">
+      <h3>1955: IBM 701</h3>
+      <img src='images/701.jpg'/>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-6000">
+      <h3>First open source OS</h3>
+      <img src="images/share.jpg"/>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-7000">
+      <img src="images/share-meeting.jpg"/>
+    </div>
+
+
+    <div class="step" data-x="-2000" data-y="-7000" data-scale='5'>
+      <h1>1980s</h1>
+    </div>
+
+    <div class="step" data-x="-2000" data-y="-6000" data-scale='1'>
+      <h3>Apple</h3>
+      <img src="images/apple-team.jpg"/>
+    </div>
+
+    <div class="step" data-x="-2000" data-y="-5000" data-scale='1'>
+      <h3>Mike Boich: Mark Barton</h3>
+      <img src="images/sam-ad.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-4000" data-scale='1'>
+      <img src="images/mac.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-3000">
+      <img src="images/guykawasaki.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-2000">
+      <h3>guykawasaki.com</h3>
+      <img src="images/guy-book.jpg"/>
+    </div>
+
+
+
+
+    <div class="step slide" data-x="-1000" data-y="-2000">
+      <h3>Kathy Sierra</h3>
+      <img src="images/head-first.jpg"/>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-2000">
+      <img src="images/kickass.jpg"/>
+    </div>
+
+
+    <div class="step" data-x="1000" data-y="-2000" data-scale="1">
+      <h3>To make a long story short</h3>
+      <img src="images/book.gif"/>
+    </div>
+
+    <div class="step last" data-x="0" data-y="2000" data-scale="20">
+      <h3>you are joining a field with an illustrious tradition</h3>
+    </div>
+
+    <div class="step last" data-x="0" data-y="4000" data-scale="5">
+      <h3>Thank You!</h3>
+      <h3>@joshmarinacci</h3>
+      <h3>Go PubNub</h3>
+    </div>
+
+  </div>
+  <div class="hint">
+      <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  <script>
+  if ("ontouchstart" in document.documentElement) {
+      document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+  </script>
+  <script src="impress.js"></script>
+  <script>impress().init();</script>
+
+</body>
+</html>
